@@ -15,6 +15,7 @@ easy way to style an html website
     --primary-color:#FF8E00;
     --secondary-color: #FF5003;
     --border: #e9ecef;
+    --background-dark: #141517; 
 }
 
 body{
@@ -61,7 +62,7 @@ a{
 }
 
 .background-black{
-    background-color: #000000;
+    background-color: var(--background-dark);
 }
 
 .background-white{
@@ -480,8 +481,9 @@ a{
     color: white;
 }
 
-#posts{
+#landingpage{
     margin-top: 0px;
+    background-color: var(--background-dark);
 }
 
 .grid{
@@ -497,10 +499,10 @@ a{
 /* Landing page */
 .landingpage-text{
     margin: 0px;
-    padding: 50px 50px;
+    padding: 220px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: #000000;
+    background-color: var(--background-dark)
 }
 .typewrite{
     font-size: 70px;
@@ -591,6 +593,10 @@ a{
     .navbar-nav-icons{
         padding: 0;
     }
+    .landingpage-text{
+        padding: 160px 0px 160px 0px;
+
+}
 }
 
 /* Damit das Gridsystem aus JS responsive ist */
@@ -611,8 +617,8 @@ a{
         padding: 0;
     }
     .landingpage-text{
-        padding: 50px 0px 50px 0px;
-    }
+        padding: 160px 0px 160px 0px;
+
 }
 @media(max-width: 574px){
 
@@ -684,8 +690,8 @@ a{
         padding: 30px 30px;
     }
 
+    .landingpage-text{
+        padding: 200px 0px 200px 0px;
 
-
+    }
 }
-
-
