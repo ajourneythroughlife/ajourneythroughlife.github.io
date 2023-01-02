@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome incons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="sticky shadow bg-light">
+        <nav class="container navbar">
+            <a href="/index.html" class="nav-brand letterspacing_header text-dark">
+                toms blog
+            </a>
+            <!-- toggle button -->
+            <button class="toggle-button">
+                <span><i class="fas fa-bars"></i></span> 
+                <!-- span is like a div element, but div is a block-level element and span is an inline elment -->
+            </button>
+
+            <!-- collapse on toggle click -->
+            <div class="collapse">
+              <ul class="navbar-nav-items">
+                  <li class="nav-item"><a href="/index.html" class="nav-link-anim">Home</a></li>
+                  <li class="nav-item"><a href="/blog.html" class="nav-link-anim">Blog</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link-anim">Bilder</a></li>
+              </ul>
+          </div>
+
+            <!-- collapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar-nav-icons">
+                    <div class="search-box">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>   
+                    </div>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="/loginpage.html" class="nav-link"><button class="letterspacing_header login-button">login</button></a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    
+    <!-- .Header -->
+    
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <!-- Post Content -->
+        <section class="container">
+            <article id="post">
+                <!-- article heading -->
+                <div class="headings text-center">
+                    <div class="category">
+                        <a href="#" class="nav-link">Travel?</a>
+                    </div>
+                    <div class="title">
+                        <h2 class="text-title text-white display-1">
+                            Überschrift von irgendeinem Artikel
+                        </h2>
+                    </div>
+                    <div class="meta">
+                        <a href="#" class="link display-2 text-white px-1">
+                            <i class="fas fa-user text-primary"></i>
+                            Mein Name
+                        </a>
+                        <a href="#" class="link display-2 text-white px-1">
+                            <i class="fas fa-clock text-primary"></i>
+                            Mein Name
+                        </a>
+                        <a href="#" class="link display-2 text-white px-1">
+                            <i class="fas fa-comments text-primary"></i>
+                            Kommentare
+                        </a>
+                    </div>
+                </div>
+                <!-- .article heading -->
+
+                <!-- thumbnail -->
+                <div class="thumbnail mt-3">
+                    <img src="./assets/img-4.jpg" class="thumbnail" alt="">
+                </div>
+                <!-- .thumbnail -->
+
+                <!-- content -->
+                <div class="content text-white display-2 secondary-title mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam aspernatur omnis maxime odit dolor libero optio consequatur totam laboriosam. Eaque nesciunt possimus eum cum sapiente soluta odio sint animi vel architecto expedita sed ipsa, exercitationem ipsam officia excepturi aliquid praesentium reiciendis sunt. Ipsam non quas ad aliquam. Dignissimos dolorem reiciendis ex. Rem maxime illum mollitia nesciunt itaque accusamus, obcaecati cumque asperiores vero? Totam, fugiat velit nisi nihil quaerat rerum cupiditate ex quo! Ipsum, libero quo quasi dolore tempore, maiores voluptatum reprehenderit maxime quam consequatur aliquid ut optio est pariatur fugiat laboriosam natus quisquam officia perferendis adipisci consectetur mollitia ducimus. Maiores, consequatur. Nesciunt laudantium ipsum ducimus ad doloremque tempore repellendus mollitia iure recusandae dicta! Iusto voluptas provident at obcaecati dolor suscipit amet vel corrupti id tempore tenetur impedit voluptatem doloribus quam alias et facilis, eligendi itaque deleniti inventore fugit dolorum? Eum quasi error perferendis et ut inventore numquam eligendi aliquam at esse, officiis, tenetur rerum necessitatibus, laborum cupiditate sapiente perspiciatis cum. Facilis, fugit quia odio molestiae facere excepturi accusamus non fugiat omnis deserunt. Ipsa iusto perferendis perspiciatis, aliquam dolore libero. Tempore, dolor iusto cupiditate quas maiores laborum. Magni itaque doloribus eos voluptates. Magnam quas minima illum iusto maiores eveniet optio.
+                </div>
+                <!-- .content -->
+            </article>
+
+            <!-- post footer author section-->
+            <div class="post-footer text-center">
+                <div class="author-avatar">
+                    <img src="./assets/img-5.jpg" class = "rounded" alt="">
+                </div>
+
+                <div class="author-info py-2">
+                    <h3 class="text-white">Thomas die Lokokmotive</h3>
+                    <p class="text-white secondary-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum numquam sunt odio ipsum voluptatibus quaerat animi porro accusantium et tenetur?</p>
+                </div>
+            </div>
+            <!-- .post footer author section-->
+        </section>
+        <!-- .Post Content -->
+
+    </main>
+    <!-- .Main Site -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+          <div class="row mb-3">
+              <div class="col-3">
+                  <h2 class="footer-title secondary-title">About Me</h2>
+
+                  <div class="secondary-title text-secondary">
+                       <p class="mt-2 ">
+                        Willkommen auf meinem Blog! Ich bin Tom, äußerst begeisterungsfähig und immer auf der
+                        Suche nach neuen Erfahrungen. Durch das Schreiben dieses Blogs möchte ich meine Gedanken
+                        ordnen und meine Erfahrungen mit anderen teilen. 
+                        Dieser Blog soll nicht nur ein Zeitkapsel für mein späteres Ich sein, sondern auch Freunden die
+                        Möglichkeit bieten an meine Leben teil zu haben. Eine Art Instagramseite also,
+                        bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt, 
+                        dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.
+                        Schau dich gerne um! 
+                       </p>
+                       
+                       <address>
+                           <i class="fas fa-map-marker-alt text-primary"></i> 
+                           Adresse
+                       </address>
+
+                       <div class="phone">
+                           <i class="fas fa-mobile text-primary"></i> 
+                           Telefonnummer
+                       </div>
+
+                       <div class="email">
+                           <i class="fas fa-envelope text-primary"></i> 
+                           Emailadresse
+                       </div>
+
+                  </div>
+              </div>
+              <div class="col-3">
+                  <h2 class="footer-title secondary-title">upcoming</h2>
+
+                  <div class="feature-post">
+                      <div class="flex-item">
+                          <article class="article">
+                              <div class="d-flex">
+                                  <a href="#">
+                                      <img src="./assets/Running-bro.png" class="object-fit px1" alt="">
+                                      <div class="px-1">
+                                        <!-- <a href="https://storyset.com/people">People illustrations by Storyset</a> -->
+                                          <a href="#" class="text-title display-2 text-dark px-1">
+                                            Marathonvorbereitung 
+                                          </a>
+                                          <p class="secondary-title text-dark display-3 px-1">
+                                               <span><i class="far fa-clock text-secondary"></i> irgendwann </span>
+                                          </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </article>
+                      </div>
+                      <div class="flex-item">
+                       <article class="article">
+                           <div class="d-flex">
+                               <a href="#">
+                                   <img src="./assets/Creative writing-bro.png" class="object-fit px-1" alt="">
+                                   <div class="px-1">
+                                       <a href="#" class="text-title display-2 text-dark px-1">
+                                       <!-- <a href="https://storyset.com/idea">Idea illustrations by Storyset</a> -->
+                                        Blog fertigstellen 
+                                       </a>
+                                       <p class="secondary-title text-dark display-3 px-1">
+                                            <span><i class="far fa-clock text-secondary"></i> Clock Wed 02, 2021 </span>
+                                       </p>
+                                   </div>
+                               </a>
+                           </div>
+                       </article>
+                        </div>
+                        
+                  </div>
+              </div>
+              <div class="col-3">
+                   <h2 class="footer-title secondary-title mt-2">Social</h2>
+                   <div class="tags social">
+                       <div class="d-flex flex-wrap">
+                           <a href="#" class="nav-link btn bg-light"><i class="fab fa-linkedin-in"></i></a>
+                           <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
+                       </div>
+                   </div>
+
+              </div>
+          </div>
+      </div>
+  </footer>
+<!-- .footer -->
+
+    <!-- .footer -->
+    <!-- masonary libary for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper Slider cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="main.js"></script>
+</body>
+</html>
