@@ -8,208 +8,219 @@ easy way to style an html website
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
 
 /* root styling */
-:root{
+:root {
     --light: #ffffff;
     --secondary: #002347;
     --dark: #000000;
-    --primary-color:#FF8E00;
+    --primary-color: #FF8E00;
     --secondary-color: #FF5003;
     --border: #e9ecef;
-    --background-dark: #141517; 
+    --background-dark: #141517;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-* > * { /* ??? */
-    box-sizing: border-box; /* padding and border are included in the width and height */
+*>* {
+    /* ??? */
+    box-sizing: border-box;
+    /* padding and border are included in the width and height */
 }
 
 /* global styling */
-.text-light{
+.text-light {
     color: var(--light);
 }
 
-.text-white{
+.text-white {
     color: white;
 }
 
-.text-secondary{
+.text-secondary {
     color: var(--secondary);
 }
 
-.text-dark{
+.text-dark {
     color: var(--dark);
 }
 
-.text-primary{
+.text-primary {
     color: var(--primary-color);
 }
 
-.bg-light{
+.bg-light {
     color: var(--light);
 }
 
-.color-secondary{
+.color-secondary {
     color: var(--secondary-color);
 }
 
-.background-black{
+.background-black {
     background-color: var(--background-dark);
 }
 
-.background-white{
+.background-white {
     background-color: white;
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: auto;
 }
 
-.img-fluid{
+.img-fluid {
     width: 100%;
     transition: all 150ms ease-in-out;
 }
 
 /* creating hover effect for images */
 
-.img-fluid:hover{
+.img-fluid:hover {
     transform: scale(1.05);
 }
 
 
-.text-title{
+.text-title {
     font-family: 'Poppins', sans-serif;
 }
 
-.secondary-title{
+.secondary-title {
     font-family: 'Poppins', sans-serif;
 }
 
-.display-1{
+.display-1 {
     font-size: 21px;
 }
 
-.display-2{
+.display-2 {
     font-size: 16px;
 }
 
-.display-3{
+.display-3 {
     font-size: 14px;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.text-right{
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
     text-align: right;
 }
 
-.btn{
+.btn {
     padding: 15px 15px 20px 20px;
     border: none;
     margin: 20px;
 }
 
-.btn-primary{
+.btn-primary {
     border-radius: 4px;
     background-color: #2ec4b6;
 }
 
-.object-fit{
+.object-fit {
     max-height: 120px;
     height: 80px;
     width: 80px;
     object-fit: fill;
-    
+
 }
 
-.d-flex{
-    display: flex;   
+.d-flex {
+    display: flex;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
-.justify-content-between{
+.justify-content-between {
     justify-content: space-between;
 }
 
-.mt-2{
+.mt-2 {
     margin-top: 10px;
 }
 
-.mt-3{
+.mt-3 {
     margin-top: 50px;
 }
 
-.mb-3{
+.mb-3 {
     margin-bottom: 30px;
 }
 
-.m-0{
+.m-0 {
     margin: 0;
 }
 
-.px-1{
+.px-1 {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.px-2{
+.px-2 {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.py-10{
+.py-10 {
     padding-top: 35px;
 }
 
-.py-1{
+.py-1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.py-2{
+.py-2 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.py-3{
+.py-3 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.thumbnail{
+.thumbnail {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-.rounded{
+.rounded {
     height: 120px;
     width: 120px;
     object-fit: fill;
     border-radius: 99px;
 }
 
-.letterspacing_header{
+.letterspacing_header {
     letter-spacing: 2px;
+}
+
+.m-p-section {
+    margin: 4em;
+    padding: 4em;
 }
 
 
@@ -219,17 +230,17 @@ a{
 /* --------------- Login Page --------------- */
 
 
- .loginpage-body {
+.loginpage-body {
     margin: 0;
     height: 80vh;
-    display: flex ;
+    display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     background-color: white;
     font-size: 18px;
 }
 
-.loginpage-container{
+.loginpage-container {
     width: 400px;
     max-width: 400px;
     margin: 1rem;
@@ -247,35 +258,35 @@ a{
 
 }
 
-.form > *:first-child{
+.form>*:first-child {
     margin-top: 0;
 }
 
-.form > *:last-child{
+.form>*:last-child {
     margin-bottom: 0;
 }
 
-.form__title{
+.form__title {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
 }
 
-.form__message{
+.form__message {
     text-align: center;
     margin-bottom: 1rem;
 
 }
 
-.form__message--success {
+.form__message--success {
     color: green;
 }
 
-.form__message--error{
+.form__message--error {
     color: red;
 }
 
-.form__input-group{
+.form__input-group {
     margin-bottom: 1rem;
 }
 
@@ -284,7 +295,7 @@ a{
     width: 100%;
     padding: 0.75rem;
     font-size: 0.9rem;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     /* box-sizing: border-box includes width and height in padding */
     border-radius: var(--border-radius);
     border: 2px solid black;
@@ -345,7 +356,7 @@ a{
 /* --------------- .Login Page --------------- */
 /* --------------- Navigation Menu --------------- */
 
-.navbar{
+.navbar {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -355,7 +366,7 @@ a{
 
 }
 
-.nav-brand{
+.nav-brand {
     justify-content: center;
     font-family: 'DM', sans-serif;
     font-weight: 500;
@@ -366,36 +377,38 @@ a{
     transition: all 200ms ease-in;
 }
 
-.nav-brand:hover{
+.nav-brand:hover {
     color: white;
-    background-color: #000000; 
+    background-color: #000000;
 }
 
-.collapse{
+.collapse {
     align-self: center;
 }
+
 /* zwei verschiedene Navabar Klassen, um items und icons zu unterscheiden */
-.navbar-nav-items{
+.navbar-nav-items {
     display: flex;
     justify-content: center;
     margin: 0px;
 }
 
-.navbar-nav-icons{
+.navbar-nav-icons {
     display: flex;
     flex-direction: row;
     margin: 0px;
 }
 
-.nav-link{
+.nav-link {
     font-size: 18px;
     margin: 0px 12px 0px 12px;
     color: var(--dark);
     font-family: 'Poppins', sans-serif;
     transition: all 100ms ease-in;
 }
+
 /* Bar Animation for nav bar */
-.nav-link-anim{
+.nav-link-anim {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -409,7 +422,7 @@ a{
     text-transform: uppercase;
 }
 
-.nav-link-anim::after{
+.nav-link-anim::after {
     content: '';
     position: absolute;
     display: flex;
@@ -418,17 +431,17 @@ a{
     background-color: var(--secondary-color);
     bottom: -10%;
     transition: all ease-in-out 200ms;
-    } 
+}
 
-.nav-link-anim:hover::after{
+.nav-link-anim:hover::after {
     width: 40%;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--secondary-color);
 }
 
-.search-box{
+.search-box {
     display: inline;
     border-right: 1px solid var(--secondary);
     padding-right: 12px;
@@ -436,7 +449,7 @@ a{
 
 }
 
-.toggle-button{
+.toggle-button {
     font-size: 21px;
     background-color: transparent;
     border: none;
@@ -449,62 +462,64 @@ a{
     display: none;
 }
 
-.toggle-button:focus{
+.toggle-button:focus {
     outline: none;
 }
 
 /* for a sticky navbar */
 .sticky {
-	position: sticky;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
 
 /* for the Login Button */
-.login-button{
+.login-button {
     border: 2px solid black;
     background-color: white;
     transition: all 100ms ease-in;
 }
 
-.login-button:hover{
+.login-button:hover {
     background-color: #FF5003;
 }
-  
+
 /* --------------- Navigation Menu --------------- */
 
 
 /* --------------- Main Section --------------- */
-#site-main{
+#site-main {
     margin-top: 0px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
-#landingpage{
+#landingpage {
     margin-top: 0px;
     background-color: var(--background-dark);
 }
 
-.grid{
+
+.grid {
     margin: 0 auto;
 }
 
-.grid .grid-item{
+.grid .grid-item {
     width: calc(33.333333% - 20px);
     /* -20px da wir eine 20px gutter in dem .js file haben */
     margin-bottom: 3em;
 }
 
 /* Landing page */
-.landingpage-text{
+.landingpage-text {
     margin: 0px;
     padding: 220px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     background-color: var(--background-dark)
 }
-.typewrite{
+
+.typewrite {
     font-size: 70px;
     color: #FF5003;
 }
@@ -514,127 +529,141 @@ a{
 /* --------------- .Main Section --------------- */
 
 /* --------------- Footer --------------- */
-#footer{
-    padding-top: 4em;
+#footer {
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
-#footer .feature-post .flex-item{
+#footer .feature-post .flex-item {
     margin-bottom: 20px;
 }
 
-.footer-title{
+.footer-title {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 /* --------------- Footer --------------- */
 
 /* article page */
-#post{
+#post {
     padding: 0 2em;
     margin-bottom: 4em;
 }
+
 /* .article page */
 
 /* Media Query */
 
-.row{
+.row {
     display: flex;
 }
 
-.col-3{
-    flex:0 0 33.333%;
-    max-width: 33.333%;
-    padding-right: 35px;
+.col-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 50px;
 }
 
 
-@media(max-width: 1024px){ 
-    .navbar{
+@media(max-width: 1024px) {
+    .navbar {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        
+
     }
 
-    .navbar-nav-items{
+    .navbar-nav-items {
         padding: 10px 50px 0 50px;
     }
 
-    .navbar-nav-icons{
+    .navbar-nav-icons {
         padding: 0;
     }
 
-    .row{
+    .row {
         flex-wrap: wrap;
     }
-    .col-3{
-        flex:0 0 50%;
+
+    .col-3 {
+        flex: 0 0 50%;
         max-width: 50%;
     }
 
-    .search-box{
+    .search-box {
         margin: 12px;
     }
 
-    .nav-link{
+    .nav-link {
         margin: 12px;
     }
 }
 
-@media(max-width: 992px){ 
-    .navbar{
-        flex-direction: column; 
+@media(max-width: 992px) {
+    .navbar {
+        flex-direction: column;
     }
 
-    .navbar-nav-items{
+    .navbar-nav-items {
         padding: 10px 50px 0 50px;
     }
 
-    .navbar-nav-icons{
+    .navbar-nav-icons {
         padding: 0;
     }
-    .landingpage-text{
+
+    .landingpage-text {
         padding: 160px 0px 160px 0px;
 
-}
+    }
 }
 
 /* Damit das Gridsystem aus JS responsive ist */
-@media(max-width: 768px){ 
-    .grid .grid-item{
+@media(max-width: 768px) {
+    .grid .grid-item {
         width: calc(50% - 20px);
     }
-    .col-3{
-        flex:0 0 100%;
+
+    .col-2 {
+        flex: 0 0 100%;
         max-width: 100%;
+        padding: 2.5rem;
     }
 
-    .navbar-nav-items{
+    .navbar-nav-items {
         padding: 10px 50px 0 50px;
     }
 
-    .navbar-nav-icons{
+    .navbar-nav-icons {
         padding: 0;
     }
-    .landingpage-text{
+
+    .landingpage-text {
         padding: 160px 0px 160px 0px;
+    }
 
+    .m-p-section {
+        margin: 2.5em;
+        padding: 2.5em;
+    }
 }
-@media(max-width: 574px){
 
-    .toggle-button{
+@media(max-width: 574px) {
+
+    .toggle-button {
         display: initial;
         position: absolute;
     }
 
-    .collapse .navbar-nav-items{
+    .collapse .navbar-nav-items {
         display: block;
         text-align: center;
         justify-content: center;
         padding: 10px;
     }
 
-    .nav-link-anim{
+    .nav-link-anim {
         text-align: center;
         padding-bottom: 10px;
         transition: all 100ms ease-in;
@@ -642,56 +671,61 @@ a{
 
     /* keine Navbar Animation in dieser Ansicht */
 
-    .nav-link-anim:hover::after{
+    .nav-link-anim:hover::after {
         width: 0%;
     }
 
-    .nav-link-anim:hover{
+    .nav-link-anim:hover {
         color: #FF5003;
     }
-    
-    .navbar-nav-icons{
+
+    .navbar-nav-icons {
         display: flex;
         flex-direction: row;
         text-align: center;
         padding: 0;
     }
 
-    .collapse .nav-link{
+    .collapse .nav-link {
         display: block;
         text-align: center;
     }
 
-    .search-box{
+    .search-box {
         border: none;
         margin: 0;
         padding: 0;
     }
-    
-    .collapse{
+
+    .collapse {
         max-height: 0;
         overflow: hidden;
         transition: all 0.5s cubic-bezier(0, 0.96, 0.58, 1);
     }
 
-    .collapse-toggle{
+    .collapse-toggle {
         max-height: 500px;
         transition: all 0.5s cubic-bezier(0.68, 0.03, 0.98, 0.37);
     }
-    .grid .grid-item{
+
+    .grid .grid-item {
         width: calc(100%);
     }
 
-    .typewrite{
-        font-size: 55px ;
+    .typewrite {
+        font-size: 55px;
     }
-    
-    .img-fluid{
+
+    .img-fluid {
         padding: 30px 30px;
     }
 
-    .landingpage-text{
+    .landingpage-text {
         padding: 200px 0px 200px 0px;
+    }
 
+    .m-p-section {
+        margin: 1em;
+        padding: 1em;
     }
 }
