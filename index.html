@@ -1,207 +1,223 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toms blog</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- font awesome incons cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap-Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- swiper slider css file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
-        integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- custom style.css file -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- custom css animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <title>Mein Bootstrap-Blog</title>
 </head>
 
+
 <body>
-    <!-- Header -->
-    <header id="header" class="sticky shadow bg-light">
-        <nav class="container navbar">
-            <a href="/index.html" class="nav-brand letterspacing_header text-dark">
-                toms blog
-            </a>
-            <!-- toggle button -->
-            <button class="toggle-button">
-                <span><i class="fas fa-bars"></i></span>
-                <!-- span is like a div element, but div is a block-level element and span is an inline elment -->
-            </button>
 
-            <!-- collapse on toggle click -->
-            <div class="collapse">
-                <ul class="navbar-nav-items">
-                    <li class="nav-item"><a href="/index.html" class="nav-link-anim">Home</a></li>
-                    <li class="nav-item"><a href="/blog.html" class="nav-link-anim">Blog</a></li>
-                    <li class="nav-item"><a href="/bilder.html" class="nav-link-anim">Bilder</a></li>
-                </ul>
-            </div>
+  <!-- header -->
 
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav-icons">
-                    <div class="search-box">
-                        <a href="#" class="nav-link">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                    </div>
-                    <a href="https://github.com/tomhartmanngithub" class="nav-link"><i class="fa-brands fa-github icon"></i></a>
-                    <a href="https://www.instagram.com/tmhrtmn/" class="nav-link"><i class="fa-brands fa-instagram icon"></i></a>
-                    <a href="/loginpage.html" class="nav-link"><button
-                            class="letterspacing_header login-button">login</button></a>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
-
-    <!-- .Header -->
-
-
-    <!-- Main Site -->
-    <main id="site-main">
-        <!-- Blog Post Section -->
-        <section id="landingpage">
-            <div class="container">
-                <div class="landingpage-text">
-                    <h1 href="" class="typewrite" data-period="2000" data-type='[ "hallo, das ist",  "mein blog."]'>
-                    </h1>
-                </div>
-            </div>
-        </section>
-        <section id="summary">
-            <div class="container">
-                <div class="m-p-section">
-                    <h2 class="secondary-title footer-title text-dark text-center">
-                        About this Project
-                    </h2>
-                    <div class="secondary-title text-dark text-justify">
-                        <p class="mt-2">
-                            Ende 2022 musste ich aus gesundheitlichen Gründen eine längere Trainingspause einlegen.
-                            Fällt eine so zeitintensive Leidenschaft plötzlich weg, ziehen sich die Tage in die Länge
-                            und die gewonnen Stunden wollen genutzt werden. Währenddessen keimte mein Interesse am
-                            Programmieren erneut auf und ich eignete mir etwas Python, HTML, CSS und JavaScript an.
-                            Der Blog ist Resultat meines experimentieren mit HTML, CSS und JavaScript und soll nicht nur
-                            dazu dienen eine Zeitkapsel für mein späteres Ich zu sein, sondern auch Freunden die
-                            Möglichkeit bieten an meinem Leben teil zu haben. Eine Art Instagramseite also,
-                            bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt,
-                            dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.
-                            Schau dich gerne um!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog Post Section -->
-
-        <!-- Swiper slider -->
-
-        <!-- .Swiper slider -->
-    </main>
-    <!-- .Main Site -->
-
-    <!-- footer -->
-    <footer id="footer" class="background-black">
-        <div class="container">
-            <div class="row mb-3 bg-light">
-                <div class="col-2">
-                    <h2 class="footer-title secondary-title ">About Me</h2>
-
-                    <div class="secondary-title text-justify">
-                        <p class="mt-2">
-                            Willkommen auf meinem Blog! Ich bin Tom, äußerst begeisterungsfähig und immer auf der
-                            Suche nach neuen Erfahrungen. Durch das Schreiben dieses Blogs möchte ich meine Gedanken
-                            ordnen und meine Erfahrungen mit anderen teilen.
-                            Dieser Blog soll nicht nur ein Zeitkapsel für mein späteres Ich sein, sondern auch Freunden
-                            die
-                            Möglichkeit bieten an meine Leben teil zu haben. Eine Art Instagramseite also,
-                            bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt,
-                            dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.
-                            Schau dich gerne um!
-                        </p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <h2 class="footer-title secondary-title">upcoming</h2>
-
-                    <div class="feature-post">
-                        <div class="flex-item">
-                            <article class="article">
-                                <div class="d-flex">
-                                    <a href="#">
-                                        <img src="./assets/footer/jogging-bro.svg" class="object-fit px1" alt="">
-                                        <div class="px-1">
-                                            <a href="#" class="text-title display-2 px-1 bg-light">
-                                                Marathonvorbereitung
-                                            </a>
-                                            <p class="secondary-title display-3 px-1">
-                                                <span><i class="far fa-clock text-secondary color-secondary"></i>
-                                                    irgendwann </span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="flex-item">
-                            <article class="article">
-                                <div class="d-flex">
-                                    <a href="#">
-                                        <img src="/assets/footer/writing-bro.svg" class="object-fit px-1" alt="">
-                                        <div class="px-1">
-                                            <a href="#" class="text-title display-2 px-1 bg-light">
-                                                Blog fertigstellen
-                                            </a>
-                                            <p class="secondary-title display-3 px-1 bg-light">
-                                                <span><i class="far fa-clock text-secondary color-secondary"></i> Clock
-                                                    Wed 02, 2021
-                                                </span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-    </footer>
-    <!-- .footer -->
-    <!-- attribution -->
+  <header id="header">
     <div class="container">
-        <section class="mt-2 mb-3" id="attribution">
-            <div class="attribution">
-                <h3 class="footer-title secondary-title">
-                    Attribution
-                </h3>
-                <a class="text-dark" href="https://storyset.com/idea">Illustrations by Storyset</a>
-            </div>
-        </section>
+      <nav class="navbar navbar-expand-md navbar-light navbar-custom p-1 fixed-top">
+        <div class="brand-icon px-2">
+          <a href="#" class="navbar-brand navbar-brand-custom shadow shadow-intensity-xl">toms blog</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="toggleMobileMenu">
+          <ul class="navbar-nav text-center">
+            <li>
+              <a href="#" class="nav-link text-uppercase letterspacing px-3 active">Home</a>
+            </li>
+            <li>
+              <a href="/blog.html" class="nav-link text-uppercase letterspacing px-3">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-uppercase letterspacing px-3">Pictures</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-uppercase letterspacing px-3">Links</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
+          <div class="nav-icons">
+            <ul class="navbar-nav text-center nav-icons">
+              <li class="pe-md-4">
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+              <li><a href="https://github.com/tomhartmanngithub" class="nav-link"><i
+                    class="fa-brands fa-github icon"></i></a></li>
+              <li><a href="https://www.instagram.com/tmhrtmn/" class="nav-link"><i
+                    class="fa-brands fa-instagram icon"></i></a></li>
+            </ul>
+            </li>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
+          <ul class="navbar-nav text-center nav-icons">
+            <li><a href="/loginpage.html" class="nav-link"><button
+                  class="login-button text-uppercase letterspacing shadow">login</button></a>
+          </ul>
+          </li>
+        </div>
+      </nav>
     </div>
-    <!-- .attribution -->
+  </header>
+
+  <!-- end of header -->
 
 
 
 
-    <!-- masonary libary for horizontal grid -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
-        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Main Section -->
+  <main>
+    <!-- Landingpage -->
+    <div class="container" id=landingpage>
+      <div class="contianer-landingpage">
+        <div class="landingpage-text display-1">
+          <h1 href="" class="typewrite display-1" data-period="2000" data-type='[ "hallo, das ist",  "mein blog."]'>
+          </h1>
+        </div>
+      </div>
+    </div>
 
-    <!-- Swiper Slider cdn-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"
-        integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- .Landingpage -->
 
-    <!-- custom javascript main.js file -->
-    <script src="main.js"></script>
+    <!-- Summary -->
+    <div class="container my-5">
+      <div class="card-text-big m-3 shadow">
+        <div class="card-text-header letterspacing text-uppercase text-center display-3 px-3 py-5">
+          About this project
+        </div>
+        <div class="card-text-body fs-4 fw-light">
+          Ende 2022 musste ich aus gesundheitlichen Gründen eine längere Trainingspause einlegen. Fällt eine so
+          zeitintensive Leidenschaft plötzlich weg, ziehen sich die Tage in die Länge und die gewonnen Stunden wollen
+          genutzt werden. Währenddessen keimte mein Interesse am Programmieren erneut auf und ich eignete mir etwas
+          Python, HTML, CSS und JavaScript an.
+          Der Blog ist Resultat meines Experimentieres mit HTML, CSS und JavaScript und soll nicht nur dazu dienen eine
+          Zeitkapsel für mein späteres Ich zu sein, sondern auch Freunden die Möglichkeit bieten an meinem Leben teil zu
+          haben. Eine Art Instagramseite also,
+          bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt,
+          dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.<br>
+          Schau dich gerne um!
+
+
+        </div>
+      </div>
+
+    </div>
+    <!-- .Summary -->
+  </main>
+  <!-- .Main Section -->
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid p-0">
+      <div class="footer text-center">
+        <div class="row">
+          <div class="col pb-3">
+            <div class="footer-title h5 letterspacing text-uppercase pt-3 pb-3">About me</div>
+            <div class="footer-body fw-lighter">
+              Hier steht ein Text
+            </div>
+          </div>
+          <div class="col pb-3">
+            <div class="footer-title h5 letterspacing text-uppercase pt-3 pb-3">About me</div>
+            <div class="footer-body fw-lighter">
+              Hier steht ein Text
+            </div>
+          </div>
+          <div class="col pb-3">
+            <div class="footer-title h5 letterspacing text-uppercase pt-3 pb-3">About me</div>
+            <div class="footer-body fw-lighter">
+              Hier steht ein Text
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!-- .Footer -->
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          Logo
+        </a>
+        <p class="text-muted">&copy; 2022</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- JS Manosry -->
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
+  </script>
+  <!-- JS main -->
+  <script src="main.js"></script>
+
 </body>
 
 </html>

@@ -1,331 +1,324 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toms blog | Blog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- font awesome incons cdn -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap-Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
-    <!-- swiper slider css file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- custom style.css file -->
+    <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <!-- Header -->
-    <header id="header" class="sticky shadow bg-light">
-      <nav class="container navbar">
-          <a href="/index.html" class="nav-brand letterspacing_header text-dark">
-              toms blog
-          </a>
-          <!-- toggle button -->
-          <button class="toggle-button">
-              <span><i class="fas fa-bars"></i></span> 
-              <!-- span is like a div element, but div is a block-level element and span is an inline elment -->
-          </button>
 
-          <!-- collapse on toggle click -->
-          <div class="collapse">
-            <ul class="navbar-nav-items">
-                <li class="nav-item"><a href="/index.html" class="nav-link-anim">Home</a></li>
-                <li class="nav-item"><a href="/blog.html" class="nav-link-anim">Blog</a></li>
-                <li class="nav-item"><a href="" class="nav-link-anim">Bilder</a></li>
-            </ul>
+    <title>Mein Bootstrap-Blog</title>
+</head>
+
+
+<body>
+
+    <!-- header -->
+
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light navbar-custom p-1 fixed-top">
+                <div class="brand-icon px-2">
+                    <a href="#" class="navbar-brand navbar-brand-custom shadow shadow-intensity-xl">toms blog</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="toggleMobileMenu">
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a href="/index.html" class="nav-link text-uppercase letterspacing px-3 active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-uppercase letterspacing px-3">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-uppercase letterspacing px-3">Pictures</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-uppercase letterspacing px-3">Links</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
+                    <div class="nav-icons">
+                        <ul class="navbar-nav text-center nav-icons">
+                            <li class="pe-md-4">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://github.com/tomhartmanngithub" class="nav-link"><i
+                                        class="fa-brands fa-github icon"></i></a></li>
+                            <li><a href="https://www.instagram.com/tmhrtmn/" class="nav-link"><i
+                                        class="fa-brands fa-instagram icon"></i></a></li>
+                        </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
+                    <ul class="navbar-nav text-center nav-icons">
+                        <li><a href="/loginpage.html" class="nav-link"><button
+                                    class="login-button text-uppercase letterspacing shadow">login</button></a>
+                    </ul>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- end of header -->
+
+
+    
+
+    <!-- Main Section -->
+    <main>
+        <!-- Grid System w/ Mansory-->
+        <section id="posts">
+            <div class="container">
+                <div class="grid">
+                    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                            <div class="card">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="200"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                        dy=".3em">Image cap</text>
+                                </svg>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+                            <div class="card p-3">
+                                <figure class="p-3 mb-0">
+                                    <blockquote class="blockquote">
+                                        <p>A well-known quote, contained in a blockquote element.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0 text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+                            <div class="card">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="200"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                        dy=".3em">Image cap</text>
+                                </svg>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 171px;">
+                            <div class="card text-bg-primary text-center p-3">
+                                <figure class="mb-0">
+                                    <blockquote class="blockquote">
+                                        <p>A well-known quote, contained in a blockquote element.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0 text-white">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 362px;">
+                            <div class="card">
+                                <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg"
+                                    role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice"
+                                    focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                                        dy=".3em">Card image</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 378px;">
+                            <div class="card p-3 text-end">
+                                <figure class="mb-0">
+                                    <blockquote class="blockquote">
+                                        <p>A well-known quote, contained in a blockquote element.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0 text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 488px;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is another card with title and supporting text below. This card has some
+                                        additional content to make it slightly taller overall.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- .Grid System w/ Mansory-->
+
+        <!-- Summary -->
+        <section class="summary">
+            <div class="container my-5">
+                <div class="card-text-big shadow">
+                    <div class="card-text-header letterspacing text-uppercase text-center display-3 py-5">
+                        About this project
+                    </div>
+                    <div class="card-text-body fs-4 fw-light mx-2 px-md-3 px-lg-5 px-sm-2 pb-3">
+                        Ende 2022 musste ich aus gesundheitlichen Gründen eine längere Trainingspause einlegen. Fällt eine
+                        so zeitintensive Leidenschaft plötzlich weg, ziehen sich die Tage in die Länge und die gewonnen
+                        Stunden wollen genutzt werden. Währenddessen keimte mein Interesse am Programmieren erneut auf und
+                        ich eignete mir etwas Python, HTML, CSS und JavaScript an.
+                        Der Blog ist Resultat meines Experimentieres mit HTML, CSS und JavaScript und soll nicht nur dazu
+                        dienen eine Zeitkapsel für mein späteres Ich zu sein, sondern auch Freunden die Möglichkeit bieten
+                        an meinem Leben teil zu haben. Eine Art Instagramseite also,
+                        bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt,
+                        dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.<br>
+                        Schau dich gerne um!
+    
+    
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!-- .Summary -->
+    </main>
+    <!-- .Main Section -->
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="container-fluid p-0">
+            <div class="footer text-center">
+                <div class="row">
+                    <div class="col pb-3">
+                        <div class="footer-title h5 letterspacing text-uppercase pt-3 pb-3">About me</div>
+                        <div class="footer-body fw-lighter">
+                            Hier steht ein Text
+                        </div>
+                    </div>
+                    <div class="col pb-3">
+                        <div class="footer-title h5 letterspacing text-uppercase pt-3 pb-3">About me</div>
+                        <div class="footer-body fw-lighter">
+                            Hier steht ein Text
+                        </div>
+                    </div>
+                    <div class="col pb-3">
+                        <div class="footer-title h5 letterspacing text-uppercase pt-3 pb-3">About me</div>
+                        <div class="footer-body fw-lighter">
+                            Hier steht ein Text
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-          <!-- collapse on toggle button click -->
-          <div class="collapse">
-              <ul class="navbar-nav-icons">
-                  <div class="search-box">
-                      <a href="#" class="nav-link">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                      </a>   
-                  </div>
-                  <a href="#" class="nav-link"><i class="fa-brands fa-linkedin-in icon"></i></a>
-                  <a href="#" class="nav-link"><i class="fa-brands fa-instagram icon"></i></a>
-                  <a href="/loginpage.html" class="nav-link"><button class="letterspacing_header login-button">login</button></a>
-              </ul>
-          </div>
 
-      </nav>
-  </header>
-  
-  <!-- .Header -->
-    
+    </footer>
 
-    <!-- Main Site -->
-    <main id="site-main">
-        <!-- Blog Post Section -->
-        <section id="posts">
-          <div class="container py-10">
-            <div class="grid">
+    <!-- .Footer -->
 
-              <!-- article -->
-              <div class="grid-item">
-                <article class="article">
-                  <div class="card">
-                    <div class="overflow-img">
-                      <a href="/article.html">
-                        <img src="./assets/picasso_programming.png" class="img-fluid" alt="">
-                      </a>
-                    </div>
-                    <div class="card-body text-center px-1">
-                      <a href="/article.html" class="text-title display-1 text-white">toms blog</a>
-                      <p class="secondary-title text-white display-3">
-                        <span><i class="far fa-clock text-primary text-white"></i> So 25.12.2022</span>
-                        <span><i class="far fa-comments text-primary"></i>12</span>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <!-- .article -->
-
-              <!-- article -->
-              <div class="grid-item">
-                <article class="article">
-                  <div class="card">
-                    <div class="overflow-img">
-                      <a href="/article.html">
-                        <img src="./assets/img-4.jpg" class="img-fluid" alt="">
-                      </a>
-                    </div>
-                    <div class="card-body text-center px-1">
-                      <a href="/article.html" class="text-title display-1 text-white">
-                        Untertitel des Bildes
-                      </a>
-                      <p class="secondary-title text-white display-3">
-                        <span><i class="far fa-clock text-primary"></i> So 25.12.2022</span>
-                        <span><i class="far fa-comments text-primary"></i>12</span>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <!-- .article -->
-
-              <!-- article -->
-              <div class="grid-item">
-                <article class="article">
-                  <div class="card">
-                    <div class="overflow-img">
-                      <a href="/article.html">
-                        <img src="./assets/img-5.jpg" class="img-fluid" alt="">
-                      </a>
-                    </div>
-                    <div class="card-body text-center px-1">
-                      <a href="#" class="text-title display-1 text-white">
-                        Untertitel des Bildes
-                      </a>
-                      <p class="secondary-title text-white display-3">
-                        <span><i class="far fa-clock text-primary"></i> So 25.12.2022</span>
-                        <span><i class="far fa-comments text-primary"></i>12</span>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <!-- .article -->
-
-              <!-- article -->
-              <div class="grid-item">
-                <article class="article">
-                  <div class="card">
-                    <div class="overflow-img">
-                      <a href="#">
-                        <img src="./assets/img-1.png" class="img-fluid" alt="">
-                      </a>
-                    </div>
-                    <div class="card-body text-center px-1">
-                      <a href="#" class="text-title display-1 text-white">
-                        Untertitel des Bildes
-                      </a>
-                      <p class="secondary-title text-white display-3">
-                        <span><i class="far fa-clock text-primary"></i> So 25.12.2022</span>
-                        <span><i class="far fa-comments text-primary"></i>12</span>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <!-- .article -->
-
-              <!-- article -->
-              <div class="grid-item">
-                <article class="article">
-                  <div class="card">
-                    <div class="overflow-img">
-                      <a href="#">
-                        <img src="./assets/img-2.png" class="img-fluid" alt="">
-                      </a>
-                    </div>
-                    <div class="card-body text-center px-1">
-                      <a href="#" class="text-title display-1 text-white">
-                        Untertitel des Bildes
-                      </a>
-                      <p class="secondary-title text-white display-3">
-                        <span><i class="far fa-clock text-primary"></i> So 25.12.2022</span>
-                        <span><i class="far fa-comments text-primary"></i>12</span>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <!-- .article -->
-
-              <!-- article -->
-              <div class="grid-item">
-                <article class="article">
-                  <div class="card">
-                    <div class="overflow-img">
-                      <a href="#">
-                        <img src="./assets/img-3.png" class="img-fluid" alt="">
-                      </a>
-                    </div>
-                    <div class="card-body text-center px-1">
-                      <a href="#" class="text-title display-1 text-white">
-                        Untertitel des Bildes
-                      </a>
-                      <p class="secondary-title text-white display-3">
-                        <span><i class="far fa-clock text-primary"></i> So 25.12.2022</span>
-                        <span><i class="far fa-comments text-primary"></i>12</span>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <!-- .article -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    Logo
+                </a>
+                <p class="text-muted">&copy; 2022</p>
             </div>
-          </div>
-        </section>
-        <!-- Blog Post Section -->
 
-    </main>
-    <!-- .Main Site -->
+            <div class="col mb-3">
 
-    <!-- footer -->
-    <footer id="footer">
-      <div class="container">
-          <div class="row mb-3">
-              <div class="col-3">
-                  <h2 class="footer-title secondary-title">About Me</h2>
+            </div>
 
-                  <div class="secondary-title text-secondary">
-                       <p class="mt-2 ">
-                        Willkommen auf meinem Blog! Ich bin Tom, äußerst begeisterungsfähig und immer auf der
-                        Suche nach neuen Erfahrungen. Durch das Schreiben dieses Blogs möchte ich meine Gedanken
-                        ordnen und meine Erfahrungen mit anderen teilen. 
-                        Dieser Blog soll nicht nur ein Zeitkapsel für mein späteres Ich sein, sondern auch Freunden die
-                        Möglichkeit bieten an meine Leben teil zu haben. Eine Art Instagramseite also,
-                        bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt, 
-                        dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.
-                        Schau dich gerne um! 
-                       </p>
-                       
-                       <address>
-                           <i class="fas fa-map-marker-alt text-primary"></i> 
-                           Adresse
-                       </address>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
 
-                       <div class="phone">
-                           <i class="fas fa-mobile text-primary"></i> 
-                           Telefonnummer
-                       </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
 
-                       <div class="email">
-                           <i class="fas fa-envelope text-primary"></i> 
-                           Emailadresse
-                       </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
-                  </div>
-              </div>
-              <div class="col-3">
-                  <h2 class="footer-title secondary-title">upcoming</h2>
 
-                  <div class="feature-post">
-                      <div class="flex-item">
-                          <article class="article">
-                              <div class="d-flex">
-                                  <a href="#">
-                                      <img src="./assets/img9.jpg" class="object-fit px-1" alt="">
-                                      <div class="px-1">
-                                          <a href="#" class="text-title display-2 text-dark">
-                                           Recovery und Marathonvorbereitung 
-                                          </a>
-                                          <p class="secondary-title text-secondary display-3">
-                                               <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
-                                          </p>
-                                      </div>
-                                  </a>
-                              </div>
-                          </article>
-                      </div>
-                      <div class="flex-item">
-                       <article class="article">
-                           <div class="d-flex">
-                               <a href="#">
-                                   <img src="./assets/img1.jpg" class="object-fit px-1" alt="">
-                                   <div class="px-1">
-                                       <a href="#" class="text-title display-2 text-dark">
-                                        Looking for some feedback for this rejected track
-                                        technology
-                                       </a>
-                                       <p class="secondary-title text-secondary display-3">
-                                            <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
-                                       </p>
-                                   </div>
-                               </a>
-                           </div>
-                       </article>
-                        </div>
-                        <div class="flex-item">
-                           <article class="article">
-                               <div class="d-flex">
-                                   <a href="#">
-                                       <img src="./assets/img2.jpg" class="object-fit px-1" alt="">
-                                       <div class="px-1">
-                                           <a href="#" class="text-title display-2 text-dark">
-                                            Looking for some feedback for this rejected track
-                                            technology
-                                           </a>
-                                           <p class="secondary-title text-secondary display-3">
-                                                <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
-                                           </p>
-                                       </div>
-                                   </a>
-                               </div>
-                           </article>
-                       </div>
-                  </div>
-              </div>
-              <div class="col-3">
-                   <h2 class="footer-title secondary-title mt-2">Social</h2>
-                   <div class="tags social">
-                       <div class="d-flex flex-wrap">
-                           <a href="#" class="nav-link btn bg-light"><i class="fab fa-linkedin-in"></i></a>
-                           <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
-                       </div>
-                   </div>
 
-              </div>
-          </div>
-      </div>
-  </footer>
-<!-- .footer -->
 
-    <!-- .footer -->
-    <!-- masonary libary for horizontal grid -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Swiper Slider cdn-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- custom javascript main.js file -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- JS Manosry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async>
+    </script>
+    <!-- JS Main -->
     <script src="main.js"></script>
+
 </body>
+
 </html>

@@ -1,24 +1,6 @@
-let toggle = document.querySelector('#header .toggle-button');
-// mit querySelectorAll werden alle "collapse" Klassen ausgewählt. Wir haben hier zwei
-let collapse = document.querySelectorAll('#header .collapse');
-
-toggle.addEventListener('click', function(){
-    collapse.forEach(col => col.classList.toggle("collapse-toggle"));
-})
-
-// with masonary 
-new Masonry('#posts .grid', {
-    itemSelector:'.grid-item',
-    gutter: 20,
-
-})
-
-
 
 // typewriter
 
-
-/* Typewriter */
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -39,7 +21,7 @@ TxtType.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<p class="wrap">'+this.txt+'</span>';
 
     var that = this;
     var delta = 150 - Math.random() * 100;
