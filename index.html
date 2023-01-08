@@ -28,25 +28,29 @@
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-light navbar-custom p-1 fixed-top">
         <div class="brand-icon px-2">
-          <a href="#" class="navbar-brand navbar-brand-custom shadow shadow-intensity-xl">toms blog</a>
+          <a href="#" class="navbar-brand navbar-brand-custom">toms blog</a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
           aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-center" id="toggleMobileMenu">
           <ul class="navbar-nav text-center">
             <li>
-              <a href="#" class="nav-link text-uppercase letterspacing px-3 active">Home</a>
+              <a href="#" class="nav-link text-uppercase letterspacing px-3">Home</a>
             </li>
             <li>
               <a href="/blog.html" class="nav-link text-uppercase letterspacing px-3">Blog</a>
             </li>
             <li>
-              <a href="#" class="nav-link text-uppercase letterspacing px-3">Pictures</a>
+              <a href="/pictures.html" class="nav-link text-uppercase letterspacing px-3">Pictures</a>
             </li>
             <li>
-              <a href="#" class="nav-link text-uppercase letterspacing px-3">Links</a>
+              <a href="/links.html" class="nav-link text-uppercase letterspacing px-3">Links</a>
             </li>
           </ul>
         </div>
@@ -69,7 +73,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
           <ul class="navbar-nav text-center nav-icons">
             <li><a href="/loginpage.html" class="nav-link"><button
-                  class="login-button text-uppercase letterspacing shadow">login</button></a>
+                  class="login-button text-uppercase letterspacing">login</button></a>
           </ul>
           </li>
         </div>
