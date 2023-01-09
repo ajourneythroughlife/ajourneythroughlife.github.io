@@ -28,10 +28,10 @@ TxtType.prototype.tick = function() {
 
     if (this.isDeleting) { delta /= 2; }
 
-    if (!this.isDeleting && this.txt === fullTxt && this.loopNum < 1) {
+    if (!this.isDeleting && this.txt === fullTxt && this.loopNum < 2) {
     delta = this.period;
     this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '' && this.loopNum < 1) {
+    } else if (this.isDeleting && this.txt === '' && this.loopNum < 2) {
     this.isDeleting = false;
     this.loopNum++;
     delta = 200;
