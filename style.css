@@ -43,9 +43,9 @@ body {
     width: 100%;
     margin-bottom: 25px;
     color: white;
-    background-image: linear-gradient(110.3deg, rgba(169, 193, 213, 0.322) 4.3%, rgba(138, 148, 190, 0.566) 96.7%);
+    background-image: linear-gradient(110.3deg, rgba(153, 118, 214, 0.082) 4.3%, rgba(146, 90, 236, 0.108) 96.7%);
     border-radius: 5px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     font-weight: 500;
 
 }
@@ -55,14 +55,15 @@ body {
 /* navbar */
 
 .navbar-custom {
-    background-image: linear-gradient(110.3deg, rgba(73, 93, 109, 0.581) 4.3%, rgba(49, 55, 82, 0.551) 96.7%);
+    background-image: linear-gradient(110.3deg, rgba(73, 93, 109, 0.581) 4.3%, rgba(82, 59, 123, 0.551) 96.7%);
     backdrop-filter: blur(5px);
     z-index: 100;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.275);
 }
 
-
-
-
+.box-shadow{
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.275);
+}
 
 /* navbar-toggler */
 .navbar-toggler {
@@ -217,7 +218,16 @@ body {
 
 /* .landingpage */
 
-/* summary */
+/* main section */
+.card{
+    transition: all 100ms ease-in;
+}
+.card:hover{
+    transform: scale(1.025);
+}
+/* .main section */
+
+/* about */
 
 .card-text-big {
     background-color: white;
@@ -229,7 +239,7 @@ body {
     font-size: 16px !important;
 }
 
-/* .summary */
+/* .about */
 
 
 
