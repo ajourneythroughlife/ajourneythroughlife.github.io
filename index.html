@@ -22,15 +22,13 @@
 
 <body>
 
-  <!-- vanta background -->
-
   <!-- header -->
 
   <header id="header">
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-light navbar-custom p-1 fixed-top">
         <div class="brand-icon px-2">
-          <a href="/index.html" class="navbar-brand navbar-brand-custom fw-light">toms blog</a>
+          <a href="#landingpage" class="navbar-brand navbar-brand-custom">toms blog</a>
         </div>
 
         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
@@ -84,11 +82,15 @@
   <!-- end of header -->
 
 
-  <div id="vanta-canvas">
+  <!-- vanta background -->
 
-    <!-- Main Section -->
-    <main>
-      <!-- Landingpage -->
+
+
+  <!-- Main Section -->
+  <main>
+    <!-- Landingpage -->
+
+    <div id="vanta-canvas-tree">
       <div class="container" id=landingpage>
         <div class="contianer-landingpage">
           <div class="landingpage-text display-1">
@@ -97,12 +99,16 @@
           </div>
         </div>
       </div>
-
       <!-- .Landingpage -->
+    </div>
+
 
       <!-- Blog-posts -->
       <section id="blog-posts">
         <div class="container">
+          <div class="heading justify-content-center d-flex">
+            <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement</p>
+          </div>
           <div class="grid">
             <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
               style="position: relative; height: 690px;">
@@ -216,6 +222,9 @@
       <!-- Picture-posts -->
       <section id="picture-posts">
         <div class="container">
+          <div class="heading">
+            <p class="display-5 text-center">Bedeutungsschwangeres Statement</p>
+          </div>
           <div class="grid">
             <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
               style="position: relative; height: 690px;">
@@ -335,12 +344,12 @@
 
       <!-- Summary -->
       <section id="about">
-        <div class="container my-5">
+        <div class="container">
+          <div class="heading">
+            <p class="display-5 text-center">Bedeutungsschwangeres Statement</p>
+          </div>
           <div class="card-text-big shadow">
-            <div class="card-text-header letterspacing text-uppercase text-center display-3 py-5">
-              About this project
-            </div>
-            <div class="card-text-body fs-4 fw-light mx-2 px-md-3 px-lg-5 px-sm-2 pb-3">
+            <div class="card-text-body fs-4 fw-light m-2 px-md-3 px-lg-5 px-sm-2 p-3">
               Ende 2022 musste ich aus gesundheitlichen Gründen eine längere Trainingspause einlegen. Fällt eine
               so zeitintensive Leidenschaft plötzlich weg, ziehen sich die Tage in die Länge und die gewonnen
               Stunden wollen genutzt werden. Währenddessen keimte mein Interesse am Programmieren erneut auf und
@@ -359,68 +368,74 @@
         </div>
       </section>
       <!-- .Summary -->
-    </main>
-    <!-- .Main Section -->
+ 
+      <!-- Vanta.JS Bakcground Birds -->
 
-    <!-- Footer -->
-    <div class="container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            Logo
-          </a>
-          <p class="text-muted">&copy; 2022</p>
-        </div>
+  <!-- .Vanta.JS Bakcground Birds -->
 
-        <div class="col mb-3">
+  </main>
+  <!-- .Main Section -->
 
-        </div>
+  <!-- Footer -->
+  <div class="container footer">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          Logo
+        </a>
+        <p class="text-muted">&copy; 2022</p>
+      </div>
 
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
+      <div class="col mb-3">
 
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
+      </div>
 
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-    <!-- .Footer -->
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- .Footer -->
 
 
   </div>
 
+  <!-- Vanta.JS Backgrond Tree -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
 
   <script>
     VANTA.TRUNK({
-      el: "#vanta-canvas",
+      el: "#vanta-canvas-tree",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -429,10 +444,14 @@
       scale: 1.00,
       scaleMobile: 1.00,
       color: 0x7d7d7d,
-      spacing: 10.00
+      spacing: 2.00,
+      chaos: 2
     })
   </script>
-  <!-- .vanta background -->
+  <!-- .vanta background Tree -->
+
+
+
 
 
 

@@ -1,5 +1,19 @@
-html{
-    scroll-padding-top: 60px; 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Raleway:ital,wght@0,100;0,200;0,600;0,400;0,500;1,100;1,200&display=swap');
+/* .Fonts */
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 60px;
 }
 
 body {
@@ -7,15 +21,36 @@ body {
     background-size: 100%; */
     background-color: black;
     background-position: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
 }
 
-#vanta-canvas{
+#vanta-canvas {
     width: 100%;
     height: 100%;
 }
+
+/* section styling */
+#blog-posts,
+#picture-posts,
+#about {
+    background-color: #222426
+}
+
+.heading {
+    height: 110px;
+    width: 100%;
+    margin-bottom: 25px;
+    color: white;
+    background-image: linear-gradient(110.3deg, rgba(169, 193, 213, 0.322) 4.3%, rgba(138, 148, 190, 0.566) 96.7%);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    font-weight: 500;
+
+}
+
+/* .section styling */
 
 /* navbar */
 
@@ -170,14 +205,14 @@ body {
 .landingpage-text {
     display: flex;
     position: absolute;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-
 }
 
 .typewrite {
     color: #ffffff;
     font-size: 6rem;
+    font-weight: 400;
+
 }
 
 /* .landingpage */
@@ -191,8 +226,8 @@ body {
 
 .card-text-body {
     text-align: justify;
+    font-size: 16px !important;
 }
-
 
 /* .summary */
 
@@ -203,9 +238,7 @@ body {
 
 /* Footer */
 
-.footer {
-    background-color: #FF5003;
-}
+
 
 
 
@@ -218,7 +251,8 @@ body {
     .toggler-icon {
         display: none;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         display: none;
     }
 
