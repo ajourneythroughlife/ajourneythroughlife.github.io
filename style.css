@@ -4,7 +4,7 @@ body {
     background-color: black;
     background-position: left;
     font-family: 'Poppins', sans-serif;
-    padding-top: 70px;
+    padding-top: 38px;
     margin: 0;
 }
 
@@ -16,7 +16,7 @@ body {
 /* navbar */
 
 .navbar-custom {
-    background-image: linear-gradient(110.3deg, rgba(73, 93, 109, 0.414) 4.3%, rgba(49, 55, 82, 0.349) 96.7%);
+    background-image: linear-gradient(110.3deg, rgba(73, 93, 109, 0.581) 4.3%, rgba(49, 55, 82, 0.551) 96.7%);
     backdrop-filter: blur(5px);
 }
 
