@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- Style CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- AOS Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title>Mein Bootstrap-Blog</title>
 </head>
@@ -106,7 +108,9 @@
       <!-- Blog-posts -->
       <section id="blog-posts">
         <div class="container">
-          <div class="heading justify-content-center d-flex">
+          <div class="heading justify-content-center d-flex" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
             <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement</p>
           </div>
           <div class="grid">
@@ -222,8 +226,8 @@
       <!-- Picture-posts -->
       <section id="picture-posts">
         <div class="container">
-          <div class="heading">
-            <p class="display-5 text-center">Bedeutungsschwangeres Statement</p>
+          <div class="heading justify-content-center d-flex" data-aos="fade-left">
+            <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement #2</p>
           </div>
           <div class="grid">
             <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
@@ -345,10 +349,10 @@
       <!-- Summary -->
       <section id="about">
         <div class="container">
-          <div class="heading">
-            <p class="display-5 text-center">Bedeutungsschwangeres Statement</p>
+          <div class="heading justify-content-center d-flex" data-aos="fade-left">
+            <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement #3</p>
           </div>
-          <div class="card-text-big shadow">
+          <div class="card-text-big">
             <div class="card-text-body fs-4 fw-light m-2 px-md-3 px-lg-5 px-sm-2 p-3">
               Ende 2022 musste ich aus gesundheitlichen Gründen eine längere Trainingspause einlegen. Fällt eine
               so zeitintensive Leidenschaft plötzlich weg, ziehen sich die Tage in die Länge und die gewonnen
@@ -469,6 +473,15 @@
   </script>
   <!-- JS main -->
   <script src="main.js"></script>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+      once: false
+    });
+  </script>
 
 </body>
 
