@@ -56,13 +56,13 @@ body {
 
 .navbar-custom {
     background-image: linear-gradient(110.3deg, rgba(73, 93, 109, 0.581) 4.3%, rgba(82, 59, 123, 0.551) 96.7%);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     z-index: 100;
-    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.275);
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.275);
 }
 
 .box-shadow {
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.275);
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.275);
 }
 
 /* navbar-toggler */
@@ -142,28 +142,25 @@ body {
 /* .navbar-toggler */
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #ffffff85;
+    transition: all 100ms ease-in;
     /* Ändert die Schriftfarbe der Navigationslinks */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #ff5003;
+    color: #ffffff;
     /* Ändert die Schriftfarbe der Navigationslinks */
 }
 
 
-.nav-tabs .nav-item .nav-link.active {
-    color: #FF5003;
-}
-
 
 .navbar-brand-custom {
-    color: rgb(255, 255, 255) !important;
+    color: #ffffffbe !important;
     transition: all 150ms ease-in-out;
 }
 
 .navbar-brand-custom:hover {
-    color: #FF5003 !important;
+    color: #ffffff !important;
 }
 
 .letterspacing {
@@ -171,15 +168,15 @@ body {
 }
 
 .login-button {
-    color: white;
+    color: #ffffff85;
     border: none;
     background-color: transparent;
     border-radius: 2px;
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in;
 }
 
 .login-button:hover {
-    color: #ff5003
+    color: #ffffff
 }
 
 .nav-icons {
@@ -188,7 +185,27 @@ body {
 
 /* .navbar */
 
+/* login */
+.bg-login-style{
+    background-color: transparent;
+    background-image: linear-gradient(110.3deg, rgba(73, 80, 109, 0.562) 4.3%, rgba(82, 59, 123, 0.551) 96.7%);
+    backdrop-filter: blur(20px);
+    color: white;
+}
 
+.form-control,
+.form-control:focus{
+    background-color: transparent;
+    outline: none;
+}
+
+.btn-close-white,
+.btn-close:active{
+    outline: none;
+}
+
+
+/* .login */
 
 
 /* main section */
@@ -210,10 +227,9 @@ body {
 }
 
 .typewrite {
-    color: #ffffff;
+    color: #fffffff3;
     font-size: 6rem;
     font-weight: 400;
-
 }
 
 /* .landingpage */
