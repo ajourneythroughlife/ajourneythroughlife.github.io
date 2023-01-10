@@ -72,12 +72,59 @@
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
           <ul class="navbar-nav text-center nav-icons">
-            <li><a href="/loginpage.html" class="nav-link"><button
-                  class="login-button text-uppercase letterspacing">login</button></a>
+            <li><button class="login-button text-uppercase letterspacing m-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLogin" aria-controls="offcanvasLogin">
+                Login
+              </button>
+            </li>
           </ul>
-          </li>
         </div>
       </nav>
+
+      <!-- login-card -->
+      <div class="offcanvas offcanvas-end box-shadow bg-login-style" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasLogin" aria-labelledby="offcanvasLoginLabel">
+        <div class="offcanvas-header m-2 ml-auto d-flex justify-content-end">
+          <button type="button" class="btn-close btn-close-white text-reset color-login" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="text-center">
+            <!-- Email input -->
+            <div class="mb-4 px-5">
+              <input type="email" placeholder="e-mail" id="form2Example1" class="form-control" />
+            </div>
+
+            <!-- Password input -->
+            <div class="mb-4 px-5">
+              <input type="password" id="form2Example2" placeholder="password" class="form-control" />
+            </div>
+            
+            <div class="mb-4 text-login">
+              <a href="" class="text-login text-decoration-none">Forgot password?</a>
+            </div>
+  
+              <!-- Submit button -->
+              <button type="button" class="btn btn-primary mb-4 text-login">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center basic-text-login">
+              <p class="basic-text-login">become friends? <a href="#!" class="text-decoration-none text-login">Register</a></p>
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google text-login"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github text-login"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- .login-card -->
+
+    </div>
     </div>
   </header>
 
@@ -96,7 +143,7 @@
         <div class="contianer-landingpage">
           <div class="landingpage-text display-1">
             <h1 href="" class="typewrite display-1" data-period="2000"
-              data-type='[ "hallo lüpppi",  "das ist",  "mein blog."]'>
+              data-type='[ "hallo,",  "das ist",  "mein blog."]'>
             </h1>
           </div>
         </div>
@@ -109,7 +156,7 @@
     <section id="blog-posts">
       <div class="container">
         <div class="heading justify-content-center d-flex box-shadow" data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="350">
+          data-aos-duration="250">
           <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement</p>
         </div>
         <div class="grid">
@@ -226,7 +273,7 @@
     <section id="picture-posts">
       <div class="container">
         <div class="heading justify-content-center d-flex box-shadow" data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="350">
+          data-aos-duration="250">
           <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement #2</p>
         </div>
         <div class="grid">
@@ -350,7 +397,7 @@
     <section id="about">
       <div class="container">
         <div class="heading justify-content-center d-flex box-shadow" data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="350">
+          data-aos-duration="250">
           <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement #3</p>
         </div>
         <div class="card-text-big">
@@ -480,7 +527,6 @@
     AOS.init({
       once: false,
       mirror: true,
-      disable: 'phone',
       anchorPlacement: 'top-bottom'
     });
   </script>
