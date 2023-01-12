@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Raleway:ital,wght@0,100;0,200;0,600;0,400;0,500;1,100;1,200&display=swap');
 /* .Fonts */
 
-
+/* hidden content */
+.nsfw{
+    display: none;
+}
+.error{
+    display: none;
+}
+/* .hidden content */
 
 
 
@@ -43,6 +50,7 @@ body {
     background-image: cross-fade(blue,red);
 }
 
+
 .heading {
     height: 110px;
     width: 100%;
@@ -65,7 +73,9 @@ body {
 /* .section styling */
 
 /* navbar */
-
+.icon{
+    width: 35px;   
+}
 .navbar-custom {
 
     background-image: linear-gradient(110.3deg, rgb(35, 35, 35) 4.3%, rgb(28, 28, 28) 96.7%);
@@ -202,7 +212,7 @@ body {
 /* login */
 .bg-login-style{
     background-color: transparent;
-    background-image: linear-gradient(110.3deg, rgba(73, 80, 109, 0.562) 4.3%, rgba(114, 88, 158, 0.544) 96.7%);
+    background-image: linear-gradient(110.3deg, rgba(57, 57, 57, 0.562) 4.3%, rgba(137, 130, 151, 0.544) 96.7%);
     backdrop-filter: blur(20px);
     filter: saturate(130%);
     color: white;
@@ -275,19 +285,12 @@ body {
     background-color: transparent !important;
     background-image: linear-gradient(110.3deg, rgba(255, 255, 255, 0.162) 4.3%, rgba(217, 217, 217, 0.257) 96.7%) !important;
     filter: saturate(200%);
-    transition: all 100ms ease-in;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: white;
 
-}
-
-.card:hover {
-    transform: scale(1.025);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
 }
 
 /* .main section */
@@ -329,6 +332,9 @@ body {
 
     .navbar-toggler {
         display: none;
+    }
+    .card:hover {
+        border: 1px solid white;
     }
 
 
