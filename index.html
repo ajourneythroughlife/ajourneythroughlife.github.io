@@ -19,7 +19,7 @@
   <!-- AOS Stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <title>Mein Bootstrap-Blog</title>
+  <title>hikikomori</title>
 </head>
 
 
@@ -93,7 +93,7 @@
           <form class="text-center basic-text-login">
             <!-- Password input -->
             <div class="mb-4 px-5">
-              <label class="mb-3" for="password">enter password</label>
+              <label class="mb-3" for="password">enter password to see hidden content</label>
               <input type="password" id="password" placeholder="password" class="form-control" />
             </div>
             <div class="error text-danger" id="error-msg">
@@ -104,7 +104,7 @@
             </div>
 
             <!-- Submit button -->
-            <button type="button" id="submit-password" class="btn btn-primary mb-4 text-login">Sign in</button>
+            <button type="button" id="submit-password" class="btn btn-primary mb-4 text-login">submit</button>
             </button>
         </div>
         </form>
@@ -122,30 +122,37 @@
   <!-- vanta background 1 -->
   <!-- irgendein kommentar -->
 
-  <!-- Main Section -->
-  <main>
-    <!-- Landingpage -->
 
-    <div id="vanta-canvas-tree">
-      <div class="container" id=landingpage>
-        <div class="contianer-landingpage">
-          <div class="landingpage-text display-1">
-            <h1 href="" class="typewrite display-1" data-period="2000"
-              data-type='[ "hallo,",  "das ist",  "mein blog."]'>
-            </h1>
-          </div>
+  <!-- Landingpage -->
+
+  <div id="vanta-canvas-tree">
+    <div class="container" id=landingpage>
+      <div class="contianer-landingpage">
+        <div class="landingpage-text display-1">
+          <h1 href="" class="typewrite display-1" data-period="2000" data-type='[ "hallo,",  "das ist",  "mein blog."]'>
+          </h1>
         </div>
       </div>
-      <!-- .Landingpage -->
     </div>
+    <!-- .Landingpage -->
+  </div>
 
-    <div id="purple-background-canvas">
+  <div id="background-canvas">
+    <!-- Main Section -->
+    <main>
       <!-- Blog-posts -->
       <section id="blog-posts">
         <div class="container">
-          <div class="heading justify-content-center d-flex box-shadow" data-aos="fade-up" data-aos-easing="linear"
+          <div class="heading d-inline-block p-4 box-shadow" data-aos="fade-up" data-aos-easing="linear"
             data-aos-duration="250">
-            <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement</p>
+            <figure class="my-auto">
+              <blockquote class="blockquote text-right">
+                <p>We suffer more often in imagination than in reality.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-muted">
+                <cite title="author">Seneca</cite>
+              </figcaption>
+            </figure>
           </div>
           <div class="grid">
             <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
@@ -260,13 +267,9 @@
       <!-- Picture-posts -->
       <section id="picture-posts">
         <div class="container">
-          <div class="heading justify-content-center d-flex box-shadow" data-aos="fade-up" data-aos-easing="linear"
-            data-aos-duration="250">
-            <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement #2</p>
-          </div>
           <div class="grid">
             <div class="row" data-masonry="{&quot;percentPosition&quot;: true }"
-            style="position: relative; height: 690px;">
+              style="position: relative; height: 690px;">
 
               <!-- Picture Post Card -->
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
@@ -387,12 +390,11 @@
       <!-- Summary -->
       <section id="about">
         <div class="container">
-          <div class="heading justify-content-center d-flex box-shadow" data-aos="fade-up" data-aos-easing="linear"
-            data-aos-duration="250">
-            <p class="display-5 text-center my-auto">Bedeutungsschwangeres Statement #3</p>
+          <div class="heading-text display-5 d-inline-block p-sm-2 p-3 text-center">
+            About this project
           </div>
-          <div class="card-text-big">
-            <div class="card-text-body fs-4 fw-light m-2 px-md-3 px-lg-5 px-sm-2 p-3">
+          <div class="card-text-big my-2">
+            <div class="card-text-body fs-4 fw-light p-md-5 p-lg-5 p-sm-5 p-3 ">
               Ende 2022 musste ich aus gesundheitlichen Gründen eine längere Trainingspause einlegen. Fällt eine
               so zeitintensive Leidenschaft plötzlich weg, ziehen sich die Tage in die Länge und die gewonnen
               Stunden wollen genutzt werden. Währenddessen keimte mein Interesse am Programmieren erneut auf und
@@ -403,76 +405,25 @@
               bei welcher der Aufwand einen Beitrag zu posten zwar unvertretbar groß ausfällt,
               dafür aber nicht in eine vorgefertigte und konsumentenfreundliche Form gepresst werden muss.<br>
               Schau dich gerne um!
-
-
             </div>
           </div>
-
         </div>
       </section>
       <!-- .Summary -->
+    </main>
+    <!-- .Main Section -->
 
-      <!-- Vanta.JS Bakcground Birds -->
-
-      <!-- .Vanta.JS Bakcground Birds -->
-
-  </main>
-  <!-- .Main Section -->
-
-  <!-- Footer -->
-  <div class="container footer">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-          Logo
-        </a>
-        <p class="text-muted">&copy; 2022</p>
-      </div>
-
-      <div class="col mb-3">
-
-      </div>
-
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <!-- .Footer -->
+    <!-- Footer -->
+    <div class="container footer">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+        <div class="col mb-3">
+          <p class="text-muted">&copy; 2022</p>
+        </div>
+      </footer>
+    </div>
+    <!-- .Footer -->
   </div>
 
-
-
-  </div>
 
   <!-- Vanta.JS Backgrond Tree -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
@@ -494,14 +445,6 @@
     })
   </script>
   <!-- .vanta background Tree -->
-
-
-
-
-
-
-
-
 
 
   <!-- Bootstrap Bundle with Popper -->
